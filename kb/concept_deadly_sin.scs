@@ -1,0 +1,20 @@
+concept_deadly_sin
+
+=>nrel_main_idtf:
+    [Смертельный грех]
+    (*<-lang_ru;;*);
+    [Deadly sin]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_deadly_sin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сме́ртный грех в христианстве — тяжёлый грех, влекущий за собою потерю спасения души в случае отсутствия покаяния.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Смертельный грех)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity;
+        concept_sin   
+	};;
+*);;
+

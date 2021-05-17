@@ -1,0 +1,40 @@
+sc_node_norole_relation->nrel_holyday;;
+
+nrel_holyday
+
+<-arity: binary_relation;
+=>nrel_first_domain: concept_religion;
+=>nrel_second_domain: concept_day;
+
+=>nrel_main_idtf:
+    [праздник* ]
+    (*<-lang_ru;;*);
+    [holyday* ]
+    (*<-lang_en;;*);;
+    
+
+definition ->...
+(*
+	-> rrel_key_sc_element : nrel_holyday;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Праздник — отрезок времени, выделенный в календаре в честь чего-либо или кого-либо, имеющий сакральное (небытовое, мифическое) значение и связанный с культурной или религиозной традицией.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (праздник(*))](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : nrel_holyday;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религиозный праздник — праздник, установленный в той или иной религии, например, в буддизме, индуизме, исламе, христианстве, языческих верованиях и т. д.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (праздник(*))](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_christianity;
+        concept_buddhism;
+        concept_islam
+	};;
+*);;
+
+sc_node_not_relation-> concept_day;;

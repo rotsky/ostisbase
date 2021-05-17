@@ -1,0 +1,20 @@
+concept_dharma
+
+=>nrel_main_idtf:
+    [Дхарма]
+    (*<-lang_ru;;*);
+    [Dharma]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_dharma;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Дхарма(в буддизме) - универсальный закон бытия, открытый Буддой; буддийское учение; неделимая составляющая бытия.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Дхарма)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_buddhism;
+        concept_budda   
+	};;
+*);;
+

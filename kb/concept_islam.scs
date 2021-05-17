@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_islam;;
+
+concept_islam
+
+=> nrel_founder: concept_muhammad;
+
+=> nrel_shrine: concept_kaaba;
+
+=>nrel_highest_degree_of_the_sacred: concept_imam;
+
+=>nrel_holiday: concept_kurban_bayram;
+
+=>nrel_count: [80];
+
+=>nrel_saint_building: concept_mosque;
+
+=>nrel_symbol: concept_crescent;
+
+=> nrel_holy_book : concept_koran;
+
+=> nrel_main_idtf:
+		[Islam]
+	    (* <- lang_en;; *);
+	=> nrel_main_idtf:
+	    [Ислам]
+	    (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_islam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ислам — самая молодая и вторая по численности приверженцев, после <b><sc_element sys_idtf="concept_christianity">христианства</b>, мировая монотеистическая авраамическая <b><sc_element sys_idtf="concept_religion">религия</b>.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Ислам)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_christianity;
+        concept_religion;
+        nrel_followers
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_islam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Приверженцев ислама называют мусульманами. Большинство мусульман (85—90 %) составляют сунниты, остальные — шииты, ибадиты.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Ислам)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        nrel_followers;
+        concept_muslims
+	};;
+*);;

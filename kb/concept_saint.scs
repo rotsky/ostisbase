@@ -1,0 +1,42 @@
+concept_saint
+<-sc_node_not_relation;
+
+
+=>nrel_main_idtf:
+    [Святой]
+    (*<-lang_ru;;*);
+    [Saint]
+    (*<-lang_en;;*);;
+
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_saint;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Saint.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Святой)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_saint;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Святой — личность, особенно чтимая в различных религиях за святость, благочестие, праведность, стойкое исповедание веры, в теистических религиях — за ходатайство перед Богом за людей.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Святой)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion;
+        concept_truth
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_saint;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Православные церкви признают святыми, как правило, только православных или христиан-кафоликов, не еретиков, живших до разделения церквей. Впрочем, существуют исключения, например, арианка Святая Алла, Исаак Сирин, а в 1981 году собор РПЦЗ причислил к лику святых всех слуг царской семьи, погибших вместе с ними в Ипатьевском доме, в том числе католиков и протестантов.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Святой)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_christianity;
+                  concept_isaak_sirin
+    };;
+*);;

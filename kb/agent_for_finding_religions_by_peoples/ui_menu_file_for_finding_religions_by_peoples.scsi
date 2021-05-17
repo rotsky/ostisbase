@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_religions_by_peoples
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Найти религии по последователям](* <- lang_ru;; *);
+		[Find religions by peoples] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_religions_by_peoples _-> ._question_finding_religions_by_peoples_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_finding_religions_by_peoples_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос поиска религий, кол-ом последователей до $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of finding religions by followers below $ui_arg_1] 
+		(* <- lang_en;; *);;
+

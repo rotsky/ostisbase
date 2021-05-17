@@ -1,0 +1,26 @@
+concept_lama
+
+=>nrel_main_idtf:
+    [Лама]
+    (*<-lang_ru;;*);
+    [Lama]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_lama;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Lama.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Лама)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_lama;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Ла́ма — в тибетском буддизме — религиозный учитель.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Лама)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_buddhism
+	};;
+*);;

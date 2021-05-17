@@ -1,0 +1,39 @@
+concept_church
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+    [Церковь]
+    (*<-lang_ru;;*);
+    [Church]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_church;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Church.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Церковь)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_church;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Церковь, христианский храм  — культовое сооружение, предназначенное для собрания христиан, совершения богослужений и религиозных обрядов.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Церковь)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity;
+        nrel_religion_rite
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_church;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Главный храм города или монастыря обычно называется собором (соборным храмом); кафедральным собором принято называть храм, где находится кафедра правящего епископа (архиерея).](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Церковь)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_pontiff
+    };;
+*);;

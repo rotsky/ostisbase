@@ -1,0 +1,37 @@
+sc_node_not_relation-> concept_bible;;
+
+concept_bible
+
+=>nrel_main_idtf:
+    [Библия]
+    (*<-lang_ru;;*);
+    [Bible]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_bible;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Библия — собрание текстов, являющихся священными в иудаизме и христианстве и составляющих Священное Писание в этих религиях.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение Библия](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_scripture;
+        concept_christianity
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_bible;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В христианстве Священным Писанием является Ветхий Завет, состоящий из книг Танаха и дополнительных священных книг (в православии и католицизме), и Новый Завет.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение о Библии](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_old_testament;
+        concept_new_testament;
+        concept_tanah
+	};;
+*);;
+
+sc_node_not_relation->concept_old_testament;;
+sc_node_not_relation->concept_new_testament;;

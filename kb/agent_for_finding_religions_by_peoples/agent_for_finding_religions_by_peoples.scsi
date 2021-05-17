@@ -1,0 +1,310 @@
+agent_for_finding_religions_by_peoples
+
+=> nrel_main_idtf:
+	[агентная scp-программа поиска религий по кол-ву последователей] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding religions by peoples] 
+	(* <- lang_en;; *);
+
+<- agent_scp_program;;
+
+scp_program -> agent_for_finding_religions_by_peoples
+	(*
+		-> rrel_params: ..agent_for_finding_religions_by_peoples_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+
+		->rrel_operators: ..agent_for_finding_religions_by_peoples_set 
+			(*
+				->rrel_init: ..agent_for_finding_religions_by_peoples_operator1 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+						=>nrel_goto: ..agent_for_finding_religions_by_peoples_operator2;;
+					*);;
+				-> ..agent_for_finding_religions_by_peoples_operator2
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_religions_by_peoples ;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+						=>nrel_then: ..agent_for_finding_religions_by_peoples_operator3;;
+						=>nrel_else: ..agent_for_finding_religions_by_peoples_operator_return;;
+					*);;
+				-> ..agent_for_finding_religions_by_peoples_operator3 
+					(*
+						<- searchElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+						=>nrel_then: ..agent_for_finding_religions_by_peoples_operator4;;
+						=>nrel_else: ..agent_for_finding_religions_by_peoples_operator_return;;
+					*);;
+				-> ..agent_for_finding_religions_by_peoples_operator4
+					(*
+						<- genEl ;;
+
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer ;;
+					 	
+					 	=> nrel_goto: ..agent_for_finding_religions_by_peoples_operator5;;
+					*);;
+				-> ..agent_for_finding_religions_by_peoples_operator5
+					(*
+						<- searchElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_followers ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _param ;;
+
+						=> nrel_then: ..agent_for_finding_religions_by_peoples_operator6 ;;
+						=> nrel_else: ..agent_for_finding_religions_by_peoples_operator_return ;;
+					*);;
+				-> ..agent_for_finding_religions_by_peoples_operator6
+					(*
+						<- searchElStr5 ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _param ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _followers ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_count ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator1 ;;
+						=> nrel_else: ..agent_for_finding_religions_by_peoples_operator_return ;;
+					*);;
+
+				->..proc_finding_religions_by_peoples_operator1
+				(*
+				<- searchSetStr5 ;;
+	
+					-> rrel_1: rrel_fixed: rrel_scp_const: concept_religion ;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _types ;;
+					-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+					-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+					-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_types ;;
+
+					=> nrel_then: ..proc_finding_religions_by_peoples_operator2 ;;
+					=> nrel_else: ..proc_finding_religions_by_peoples_operator_return ;;
+				*);;
+		-> ..proc_finding_religions_by_peoples_operator2
+					(*
+						<- searchElStr3 ;;
+					
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_types ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1 ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _type ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator3 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator18 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator3
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1 ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator4 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator4
+					(*
+						<- contAssign;; 
+					
+						-> rrel_1: rrel_assign: rrel_scp_var: rrel_link: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator5 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator5
+					(*
+						<- searchSetStr5 ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _weapons ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_3: rrel_assign: rrel_scp_var: _set_of_weapons ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator6 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator2 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator6
+					(*
+						<- searchElStr3 ;;
+					
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set_of_weapons ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _weapon ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator7 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator14 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator7
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator8 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator8
+					(*
+						<- searchElStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _weapon ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _weight ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_count ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator9;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator6 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator9
+					(*
+						<- ifEq ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _followers ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _weight ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator11 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator10 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator10
+					(*
+						<- ifGr ;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _followers ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _weight ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator11 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator6 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator11
+					(*
+						<- contAdd ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: [1] ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator12 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator12
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _wcom ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _weapon ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _warc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator13 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator13
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _weapon ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator6 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator14
+					(*
+						<- ifGr ;;
+	
+						-> rrel_1: rrel_fixed: rrel_scp_var: _count ;;
+						-> rrel_2: rrel_fixed: rrel_scp_const: [0] ;;
+
+						=> nrel_then: ..proc_finding_religions_by_peoples_operator15 ;;
+						=> nrel_else: ..proc_finding_religions_by_peoples_operator2 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator15
+					(*
+						<- searchSetStr5 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: concept_religion ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _com ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type ;;
+						-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_inclusion ;;
+
+						-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator16 ;;
+					*);;
+		-> ..proc_finding_religions_by_peoples_operator16
+					(*
+						<- genElStr3 ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _type ;;
+
+						=> nrel_goto: ..proc_finding_religions_by_peoples_operator2 ;;
+					*);;
+		
+		-> ..proc_finding_religions_by_peoples_operator18
+					(*
+						<- genElStr3 ;;
+				
+						-> rrel_1: rrel_fixed: rrel_scp_var: _answer ;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc ;;
+						-> rrel_3: rrel_fixed: rrel_scp_const: concept_religion ;;
+						=> nrel_goto: ..agent_finding_religions_by_peoples_operator_errase ;;
+					*);;
+		-> ..agent_finding_religions_by_peoples_operator_errase
+					(*
+						<- eraseEl ;;
+								 
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_of_types ;;
+
+						=> nrel_goto: ..agent_finding_religions_by_peoples_operator_errase2 ;;
+					*);;
+		-> ..agent_finding_religions_by_peoples_operator_errase2
+					(*
+						<- eraseEl ;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_of_weapons ;;
+
+						=> nrel_goto: ..agent_for_finding_religions_by_peoples_answer ;;
+					*);;
+		-> ..agent_for_finding_religions_by_peoples_answer
+			(*
+				
+						<- genElStr5;;
+		
+						-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+						-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+						-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+							
+						-> nrel_goto: ..agent_for_finding_religions_by_peoples_operator_return;;
+			*);;
+		-> ..agent_for_finding_religions_by_peoples_operator_return
+					(*
+						<- return;;
+					*);;
+			*);;
+	*);;

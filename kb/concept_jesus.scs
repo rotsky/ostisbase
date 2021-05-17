@@ -1,0 +1,33 @@
+sc_node_not_relation-> concept_jesus;;
+
+concept_jesus
+
+=>nrel_main_idtf:
+    [Иисус Христос]
+    (*<-lang_ru;;*);
+    [Jesus Christ]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_jesus;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Иису́с Христо́с, или Иису́с из Назаре́та — в христианстве центральная личность и предсказанный в Ветхом Завете Мессия, ставший искупительной жертвой за грехи людей. Основными источниками информации о жизни и учении Иисуса Христа являются Евангелия и другие книги Нового Завета. Сохранились свидетельства о нём и у нехристианских авторов I—II веков.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Иисус Христос)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_person;
+        concept_christianity;
+		concept_new_testament
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_jesus;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религиоведы и теологи, придерживающиеся точки зрения, что Иисус является реальной исторической личностью, а не мифом, утверждают, что он родился в период с 7 года до н.э. по 4 год до н.э. и умер в период с 30 по 33 год](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Иисус Христос)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_person
+	};;
+*);;

@@ -1,0 +1,40 @@
+nrel_saint_building
+<-sc_node_norole_relation;
+
+
+=>nrel_main_idtf:
+    [священное сооружение* ]
+    (*<-lang_ru;;*);
+    [saint building* ]
+    (*<-lang_en;;*);
+
+
+
+<-arity: binary_relation;
+=>nrel_first_domain: concept_religion;
+=>nrel_second_domain: concept_building;;
+    
+
+definition ->...
+(*
+	-> rrel_key_sc_element : nrel_saint_building;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Священные сооружения - сооружения, где происходят совместные ритуальные действия, где люди молятся Богу.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (священное сооружение(*))](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_ritual;
+        concept_god
+	};;
+*);;
+
+
+statement ->...
+(*
+	-> rrel_key_sc_element : nrel_saint_building;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Для разных религий, священные сооружения разные.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (священное сооружение(*))](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_religion
+	};;
+*);;

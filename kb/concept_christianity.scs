@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_christianity;;
+
+concept_christianity
+
+=> nrel_founder: concept_jesus;
+
+=> nrel_shrine: concept_church_of_the_holy_sepulcher;
+
+=>nrel_highest_degree_of_the_sacred: concept_pontiff;
+
+=>nrel_count: [135];
+
+=>nrel_holiday: concept_epiphany;
+
+=>nrel_main_doctrine: concept_gods_law;
+
+=>nrel_saint_building: concept_church;
+
+=>nrel_symbol: concept_cross;
+
+=> nrel_holy_book : concept_bible;
+
+=> nrel_main_idtf:
+		[Christianity]
+	    (* <- lang_en;; *);
+	=> nrel_main_idtf:
+	    [Христианство]
+	    (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_christianity;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Христианство — <b><sc_element sys_idtf="concept_world_religion">мировая религия</b>, возникшая около 33 года в Палестине вокруг жизни и учения <b><sc_element sys_idtf="concept_jesus">Иисуса Христа</b>, описанных в Новом Завете.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (христианство)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_jesus;
+        concept_religion;
+        concept_new_tastement
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_christianity;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Христианство — самая крупная авраамическая и мировая религия как по численности приверженцев, которых около 2,4 млрд, так и по географической распространённости — в каждой стране мира есть хотя бы одна христианская община.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (христианство)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion
+	};;
+*);;

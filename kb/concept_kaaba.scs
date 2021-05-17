@@ -1,0 +1,33 @@
+sc_node_not_relation-> concept_kaaba;;
+
+concept_kaaba
+
+=>nrel_main_idtf:
+    [Кааба]
+    (*<-lang_ru;;*);
+    [Kaaba]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_kaaba;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Каа́ба — мусульманская святыня в виде кубической постройки во внутреннем дворе мечети Масджид аль-Харам (Заповедная Мечеть) в Мекке. Это одно из основных мест, собирающее, согласно кораническим предписаниям, паломников во время хаджа. Кааба носит символическое имя «аль-Бэйт аль-Харам», что означает в переводе с арабского «священный дом». ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Кааба)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_islam;
+        concept_muslims
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_kaaba;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В один из углов Каабы вмонтирован Чёрный камень. Вокруг Каабы во время хаджа совершается обряд таваф. Кааба служит киблой — ориентиром, к которому обращают своё лицо мусульмане всего мира во время молитвы. ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Кааба)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_muslims;
+        concept_prayer
+	};;
+*);;

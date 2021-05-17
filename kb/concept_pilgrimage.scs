@@ -1,0 +1,26 @@
+concept_pilgrimag
+
+=>nrel_main_idtf:
+    [Крещение]
+    (*<-lang_ru;;*);
+    [Pilgrimag]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_pilgrimag;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Pilgrimag.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Крещение)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_pilgrimag;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Паломничество —  путешествие верующих с целью поклонения к географическим местностям и реликвиям, имеющим сакральное значение в данной религии.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Паломничество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion
+	};;
+*);;

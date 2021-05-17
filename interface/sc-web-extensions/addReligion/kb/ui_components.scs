@@ -1,0 +1,25 @@
+ui_addReligion_text_component <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Компонента пользовательского интерфейса для добавления религии.]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[This is a component for adding religion.]
+	(*
+	<- lang_en;;
+	*);;
+
+ui_addReligion_answer_button <- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Добавить]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[Add]
+	(*
+	<- lang_en;;
+	*);;
+
+

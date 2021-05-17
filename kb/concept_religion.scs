@@ -1,0 +1,40 @@
+concept_religion
+<-sc_node_not_relation;
+
+=>nrel_inclusion: concept_world_religion;
+		  concept_national_religion;
+		  concept_archaic_religion;
+          
+
+=>nrel_main_idtf:
+    [Религия]
+    (*<-lang_ru;;*);
+    [Religion]
+    (*<-lang_en;;*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религия - определённая система взглядов, обусловленная верой в сверхъестественное, включающая в себя свод моральных норм и типов поведения, <b><sc_element sys_idtf="concept_rite">обрядов</b>, <b><sc_element sys_idtf="concept_religion_cult">культовых действий</b> и объединение людей в организации (<b><sc_element sys_idtf="concept_religion">церковь</b>, умма, сангха, религиозная община…)](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        nrel_faith_in;
+        concept_supernatural;
+        concept_religion_rite;
+        concept_morality
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религия не только представляет собой <b><sc_element sys_idtf="concept_truth">веру</b> в существование высших сил, но устанавливает особые отношения к этим силам: она есть, следовательно, известная деятельность воли, направленная к этим силам.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_supernatural;
+        nrel_faith_in
+    };;
+*);;

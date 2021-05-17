@@ -1,0 +1,25 @@
+concept_rite
+<-sc_node_not_rellation;
+=>nrel_main_idtf:
+    [Обряд]
+    (*<-lang_ru;;*);
+    [Rite]
+    (*<-lang_en;;*);
+<-rrel_key_sc_element: ... (*
+    <- definition;;
+    =>nrel_main_idtf:
+    [Опр. Обряд] (*<-lang_ru;;*);;
+    <= nrel_sc_text_translation: ... (*
+    ->rrel_exmple:[Обряд — совокупность действий стереотипного характер, которой присуще символическое значение.] (*<=lang_ru;; => nrel_format: format_html;;*);;
+    *);;
+    *);
+<-rrel_key_sc_element: ... (*
+    <-explanation;;
+    =>nrel_main_idtf:
+    [Утв. об Обряде] (*<-lang_ru;;*);;
+    <=nrel_sc_text_translation: ... (*
+    ->rrel_exmple:
+    [Обряды, связанные с рождением (День рождения), с вступлением в брак (свадьба), смертью (похороны), называются семейными; сельскохозяйственные и другие обряды — календарными.](*<-lang_ru;; =>nrel_format: format_html;;*);;
+    *);;
+    *);;
+        

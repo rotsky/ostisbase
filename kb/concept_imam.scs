@@ -1,0 +1,26 @@
+concept_imam
+
+=>nrel_main_idtf:
+    [Имам]
+    (*<-lang_ru;;*);
+    [Imam]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_imam;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Imam.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Имам)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_imam;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Имам — в исламе: предводитель молитвы и духовное лицо, которое заведует мечетью; титул, который носят наиболее выдающиеся богословы и религиозные авторитеты; ду­хов­ный и свет­ский гла­ва все­го му­сульманского со­об­ще­ст­ва;](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Имам)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_islam
+	};;
+*);;

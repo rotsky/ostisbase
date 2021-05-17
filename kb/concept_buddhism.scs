@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_buddhism;;
+
+concept_buddhism
+
+=> nrel_founder: concept_budda;
+
+=> nrel_shrine: concept_budda_tooth_temple;
+
+=>nrel_highest_degree_of_the_sacred: concept_lama;
+
+=>nrel_main_doctrine: concept_dharma;
+
+=>nrel_count: [40];
+
+=>nrel_symbol: concept_budda_image;
+
+=> nrel_holy_book : concept_tripitaka;
+
+=> nrel_main_idtf:
+		[Buddhism]
+	    (* <- lang_en;; *);
+	=> nrel_main_idtf:
+	    [Буддизм]
+	    (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_buddhism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Буддизм — религиозно-философское учение (дхарма) о духовном пробуждении (бодхи), возникшее в середине 1-го тысячелетия до н. э. в Древней Индии.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Буддизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_dharma;
+        concept_bodhi
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_buddhism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Сами последователи этого учения называли его «Дхарма» (Закон, Учение) или «Буддхадхарма» (<b><sc_element sys_idtf="concept_budda">Учение Будды</b>).](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(Буддизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		nrel_followers;
+		concept_dharma
+	};;
+*);;

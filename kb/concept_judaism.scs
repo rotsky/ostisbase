@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_judaism;;
+
+concept_judaism
+
+<= nrel_inclusion : concept_function;
+
+=>nrel_count: [15];
+
+=> nrel_main_idtf:
+		[Judaism]
+	    (* <- lang_en;; *);
+	=> nrel_main_idtf:
+	    [Иудаизм]
+	    (* <- lang_ru;; *);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_judaism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Иудаизм, иудейство, иудейская религия — религиозное, национальное и этическое мировоззрение, сформировавшееся у еврейского народа; одна из древнейших монотеистических религий человечества и самая древняя из существующих в настоящее время.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (иудаизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_religion;
+        concept_worldview
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_judaism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Иудаизм заявляет об исторической преемственности, охватывающей более 3000 лет.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение(иудаизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		rrel_template_argument_cpp;
+		rrel_options_template_argument_cpp
+	};;
+*);;

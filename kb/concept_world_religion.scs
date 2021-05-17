@@ -1,0 +1,36 @@
+sc_node_not_relation-> concept_world_religion;;
+
+concept_world_religion
+=>nrel_inclusion: concept_buddhism;
+				  concept_islam;
+				  concept_christianity;
+
+=>nrel_main_idtf:
+    [Мировая религия]
+    (*<-lang_ru;;*);
+    [World religion]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_world_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Мировая религия — <b><sc_element sys_idtf="concept_religion">религия</b>, распространившаяся среди народов различных стран и континентов. В отличие от национальных и национально-государственных религий, в которых вероисповедная связь между людьми совпадает с этническими и политическими связями (например, индуизм, конфуцианство, синтоизм, иудаизм), мировые, или наднациональные религии объединяют людей общим вероучением независимо от их этнических, языковых или политических связей. Кроме того, при рассмотрении религии в качестве мировой учитывается её влияние на ход истории и масштабы распространения.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Мировая религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_world_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Длительное время этим термином в религиоведении обозначали три религии <b><sc_element sys_idtf="concept_buddhism">буддизм</b>, <b><sc_element sys_idtf="concept_christianity">христианство</b>, <b><sc_element sys_idtf="concept_islam">ислам</b>.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Мировая религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_buddhism;
+		concept_christianity;
+		concept_islam
+	};;
+*);;

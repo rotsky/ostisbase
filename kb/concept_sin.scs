@@ -1,0 +1,37 @@
+concept_sin
+<-sc_node_not_relation;
+=>nrel_inclusion: concept_gluttony;
+                  concept_lust;
+                  concept_greed;
+                  concept_laziness;
+                  concept_envy;
+                  concept_anger;
+                  concept_pride;
+
+=>nrel_main_idtf:
+    [Грех]
+    (*<-lang_ru;;*);
+    [Sin]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_sin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Грех — действие или помышление, которое, как правило, ассоциируется с отступлением от праведной жизни, прямым или косвенным нарушением религиозных заповедей; реже — нарушение доминантных морально-этических правил, норм и традиций, установившихся в обществе.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Грех)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_sin;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Противоположностью греху служит добродетель или, в другом рассмотрении, вера.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Грех)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_truth
+    };;
+*);;

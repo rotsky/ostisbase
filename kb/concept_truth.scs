@@ -1,0 +1,41 @@
+concept_truth
+<-sc_node_not_relation;
+
+
+=>nrel_main_idtf:
+    [Вера]
+    (*<-lang_ru;;*);
+    [Truth]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_truth;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Truth.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Вера)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_truth;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религиозная вера имеет в качестве своей особенности веру в реальность и субстанциональность сверхъестественного; предмет веры религиозного индивида объективируется, человек убеждён в том, что объектом его веры является не мысль или понятие о Боге, а сам Бог — сверхъестественное как реально существующее.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Вера)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion;
+        concept_god
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_truth;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религии, как правило, представляют веру как одну из главных добродетелей. В христианстве вера определяется как воссоединение человека с Богом. В христианской традиции, вера — это уверенность в том, чего до конца не знают и не видели.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Вера)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_christianity;
+                  concept_religion
+    };;
+*);;

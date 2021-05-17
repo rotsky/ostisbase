@@ -1,0 +1,26 @@
+nrel_symbol
+<-sc_node_norole_relation;
+
+
+=>nrel_main_idtf:
+    [религиозный символ* ]
+    (*<-lang_ru;;*);
+    [religion symbol* ]
+    (*<-lang_en;;*);
+    
+
+<-arity: binary_relation;
+=>nrel_first_domain: concept_religion;
+=>nrel_second_domain: concept_symbol;;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : nrel_symbol;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религио́зные символы — условные изображения, обозначающие какую бы то ни было религию.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (религиозный символ(*))](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_religion
+	};;
+*);;

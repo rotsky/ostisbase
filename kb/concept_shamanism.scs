@@ -1,0 +1,44 @@
+concept_shamanism
+<-sc_node_not_relation;
+
+=>nrel_count: [21];
+=>nrel_main_idtf:
+    [Шаманизм]
+    (*<-lang_ru;;*);
+    [Shamanism]
+    (*<-lang_en;;*);;
+
+
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_shamanism;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Shamanism.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Шаманизм)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_shamanism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Шаманизм (также шаманство) — ранняя форма религии, в основании которой лежит вера в общение шамана с ду́хами в состоянии транса («камлание»). Шаманизм связан с магией, анимизмом, фетишизмом и тотемизмом. Его элементы могут содержаться в различных религиозных системах.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Шаманизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion;
+        concept_totemism;
+        concept_animism;
+        concept_fetishism
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_shamanism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В той или иной форме он существовал у большинства народов Земли. В этом смысле шаманизм принято считать древнейшей религией, насчитывающей десятки тысячелетий. Однако такое понимание несколько условно, поскольку современные религии предполагают единую мифологическую основу.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Шаманизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_religion
+    };;
+*);;

@@ -1,0 +1,39 @@
+sc_node_not_relation-> concept_national_religion;;
+
+concept_national_religion
+=>nrel_inclusion: concept_judaism;
+                  concept_induism;
+                  concept_confucianism;
+
+=>nrel_main_idtf:
+    [Национальная религия]
+    (*<-lang_ru;;*);
+    [National religion]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_national_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Национальная религия – это религия, сложившаяся в рамках одного народа, не распространившаяся на другие народы. ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Национальная религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_national_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[К национальным религиям относятся индуизм, иудаизм, конфуциантсво и т.д.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Национальная религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+		concept_judaism;
+        concept_induism;
+        concept_confucianism
+	};;
+*);;
+
+sc_node_not_relation->concept_confucianism;
+                      concept_induism;;

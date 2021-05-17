@@ -1,0 +1,41 @@
+concept_totemism
+<-sc_node_not_relation;
+
+
+=>nrel_main_idtf:
+    [Тотемизм]
+    (*<-lang_ru;;*);
+    [Totemism]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_totemism;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Totemism.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Тотемизм)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_totemism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Тотемизм — некогда весьма распространённая и ныне ещё существующая религиозно-социальная система, в основании которой лежит культ так называемого тотема.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Тотемизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_religion_cult;
+		concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_totemism;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В тотемизме, как в зародыше, заключаются главнейшие элементы дальнейших стадий религиозного развития: родство божества с человеком (божество — отец своих поклонников), табу, запретные и не запретные животные (позднейшие чистые и нечистые), жертвоприношение животного и обязательное вкушение тела его, выделение из тотемного класса избранного индивида для поклонения и содержание его при жилищах (будущее животное — божество в храме Египта), отождествление человека с божеством-тотемом (обратный антропоморфизм), власть религии над социальными отношениями, санкция общественной и личной морали (см. ниже), наконец, ревнивое и мстительное заступничество за оскорбленное тотемное божество.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Тотемизм)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_religion;
+                  concept_god
+    };;
+*);;

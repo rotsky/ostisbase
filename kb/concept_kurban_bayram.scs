@@ -1,0 +1,39 @@
+concept_kurban_bayram
+
+
+=>nrel_main_idtf:
+    [Курбан-байрам]
+    (*<-lang_ru;;*);
+    [Kurban-bayram]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_kurban_bayram;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Kurban.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Курбан-байрам)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_kurban_bayram;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Курбан-байрам или ’Ид аль-адха — исламский праздник окончания хаджа, отмечаемый через 70 дней после праздника Ураза-байрам, в 10-й день месяца Зуль-хиджа в память жертвоприношения Ибрахима, считающегося в исламе пророком.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Курбан-байрам)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_islam
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_kurban_bayram;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Согласно Корану, ангел Джабраил явился к Ибрахиму во сне и передал ему повеление от Аллаха принести в жертву сына. В Коране имя сына не названо, однако в предании почти всегда называется старший сын - Исмаил. В противоположность исламскому преданию, в Библии (Таурате) фигурирует другой сын Ибрахима Исхак (Исаак).](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Курбан-байрам)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_koran;
+                  concept_bible
+    };;
+*);;

@@ -1,0 +1,27 @@
+nrel_main_doctrine
+<-sc_node_norole_relation;
+
+
+=>nrel_main_idtf:
+    [главное учение * ]
+    (*<-lang_ru;;*);
+    [main doctrine* ]
+    (*<-lang_en;;*);
+
+
+
+<-arity: binary_relation;
+=>nrel_first_domain: concept_religion;
+=>nrel_second_domain: concept_doctrine;;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : nrel_main_doctrine;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Главное учение - совокупность догматов, какого-либо религиозного культа.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Главное учение(*))](*<- lang_ru;;*);;
+    => nrel_using_constants:
+	{
+		concept_religion_cult
+	};;
+*);;

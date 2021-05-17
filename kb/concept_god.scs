@@ -1,0 +1,41 @@
+concept_god
+<-sc_node_not_relation;
+
+
+=>nrel_main_idtf:
+    [Божество]
+    (*<-lang_ru;;*);
+    [God]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_god;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/God.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Славянское божество Марена)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_god;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Божество — постулированная сверхъестественная или бессмертная личность, которая может рассматриваться как святая, божественная или священная. В более широком смысле — предмет почитания и поклонения.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Божество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_saint
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_god;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религии можно классифицировать по количеству почитаемых божеств. Монотеистические религии принимают веру только в одно божество (преимущественно именуемое богом), политеистические религии — веру в несколько божеств.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Божество)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_politeism;
+                  concept_monoteism;
+                  concept_religion
+    };;
+*);;

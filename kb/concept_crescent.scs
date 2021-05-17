@@ -1,0 +1,27 @@
+concept_crescent
+
+=>nrel_main_idtf:
+    [Полумесяц]
+    (*<-lang_ru;;*);
+    [Crescent]
+    (*<-lang_en;;*);;
+
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_crescent;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Crescent.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Полумесяц)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_crescent;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Полумесяц - религиозный символ ислама.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Полумесяц)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_islam
+	};;
+*);;

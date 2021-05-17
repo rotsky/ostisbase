@@ -1,0 +1,30 @@
+concept_eugenialism
+
+=> nrel_main_idtf: [Eugenialism] (* <- lang_en;; *);
+=> nrel_main_idtf: [Евгениализм] (* <- lang_ru;; *);
+
+<- concept_world_religion;
+=> nrel_founder: [Eugene];
+=> nrel_shrine: [Eugene'sShrine];
+=> nrel_holy_book: [Euge];
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_main_idtf:[Опр.(Евгениализм)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Здесь будет определение.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf:[Утв.(Евгениализм)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Здесь будет описание.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+<- sc_node_not_relation;;

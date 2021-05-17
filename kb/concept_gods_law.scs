@@ -1,0 +1,21 @@
+concept_gods_law
+
+=>nrel_main_idtf:
+    [Закон Божий]
+    (*<-lang_ru;;*);
+    [God's law]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_gods_law;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Закон Божий(в христианстве) - совокупность догматов веры, толкований Библии.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Закон Божий)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity;
+        concept_bible;
+        concept_dogmat
+	};;
+*);;
+

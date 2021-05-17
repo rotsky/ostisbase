@@ -1,0 +1,35 @@
+concept_religion_cult
+<-sc_node_not_relation;
+
+
+=>nrel_main_idtf:
+    [Религиозный культ]
+    (*<-lang_ru;;*);
+    [Religion cult]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_religion_cult;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Религиозный культ  — религиозное почитание каких-либо предметов, реальных или фантастических существ, наделяемых сверхъестественными свойствами, в том числе божеств; а также совокупность обрядов, связанных с таким почитанием.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Религиозный культ)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_rite;
+		concept_religion;
+        concept_god
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_religion_cult;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Наиболее развиты в политеизме (язычестве), который фактически состоит из разнообразных культов: тотемический культ, погребальный культ, промысловый культ, родовые и семейные культы, шаманский культ, культ племенного бога и др.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Религиозный культ)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_politeism;
+                  concept_shamanism;
+                  concept_totemism
+    };;
+*);;

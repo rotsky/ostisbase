@@ -1,0 +1,39 @@
+concept_archaic_religion
+<-sc_node_not_relation;
+=>nrel_inclusion: concept_totemism;
+				  concept_fetishism;
+				  concept_animism;
+				  concept_shamanism;
+
+
+=>nrel_main_idtf:
+    [Архаичная религия]
+    (*<-lang_ru;;*);
+    [Archaic relion]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_archaic_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Архаичная религия - древняя <b><sc_element sys_idtf="concept_religion">религия</b>, общим признаком которой является политеизм – многобожие. ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Архаичная религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_politeism;
+		concept_religion
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_archaic_religion;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Наука выделяет следующие основные верования: магия, <b><sc_element sys_idtf="concept_shamanism">шаманизм</b>, анимизм, фетишизм, <b><sc_element sys_idtf="concept_totemism">тотемизм</b> и т.д.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Архаичная религия)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+				  concept_totemism;
+				  concept_fetishism;
+				  concept_animism;
+				  concept_shamanism
+	};;
+*);;

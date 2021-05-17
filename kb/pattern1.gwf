@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="concept_buddhism" shapeColor="193" id="44238288" parent="139682402866256" left="0" top="0" right="146.5" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="203.265" y="344.408" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="concept_religion" shapeColor="0" id="43619648" parent="139682402866256" left="0" top="0" right="131.438" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="228" y="92" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/group" idtf="" shapeColor="0" id="39731200" parent="139682402866256" x="203.265" y="169.408" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_inclusion" shapeColor="0" id="39306112" parent="139682402866256" left="0" top="0" right="111.891" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="373.265" y="246.408" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="37710688" parent="139682402866256" id_b="43619648" id_e="39731200" b_x="228" b_y="92" e_x="203.265" e_y="169.408" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="43439440" parent="139682402866256" id_b="39306112" id_e="45943568" b_x="373.265" b_y="246.408" e_x="0.265447" e_y="-122.592" dotBBalance="0" dotEBalance="0.407051">
+            <points/>
+        </arc>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="45943568" parent="139682402866256" id_b="39731200" id_e="44238288" b_x="203.265" b_y="169.408" e_x="203.265" e_y="344.408" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="" idtf="Find all" shapeColor="0" id="139682402866256" parent="0" left="0" top="0" right="66.0625" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10">
+            <points>
+                <point x="61.2654" y="56.4076"/>
+                <point x="56.2654" y="483.408"/>
+                <point x="713.265" y="483.408"/>
+                <point x="711.265" y="53.4076"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>

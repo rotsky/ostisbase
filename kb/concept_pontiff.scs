@@ -1,0 +1,30 @@
+concept_pontiff
+
+=>nrel_main_idtf:
+    [Епископ]
+    (*<-lang_ru;;*);
+    [Pontiff]
+    (*<-lang_en;;*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_pontiff;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Епископ в Христианской Церкви — священнослужитель третьей (высшей) степени священства, также архиерей.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Епископ)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity
+	};;
+*);;
+
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_pontiff;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Первоначально, в апостольское время, термин «епископ», как он употребляется в посланиях апостола Павла, обозначал старшего наставника отдельной общины последователей Иисуса Христа. ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Епископ)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_jesus
+    };;
+*);;

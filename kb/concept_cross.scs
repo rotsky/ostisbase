@@ -1,0 +1,37 @@
+concept_cross
+
+=>nrel_main_idtf:
+    [Крест]
+    (*<-lang_ru;;*);
+    [Cross]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_cross;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Cross.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Крест)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_cross;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Крест - традиционный религиозный символ христианства и объект религиозного почитания в ряде христианских конфессий.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Крест)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_cross;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В христианском богословии крест рассматривается как символ, указывающий на искупительную жертву Иисуса Христа.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Крест)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_jesus
+    };;
+*);;

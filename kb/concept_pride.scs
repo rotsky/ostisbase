@@ -1,0 +1,37 @@
+concept_pride
+<-concept_deadly_sin;
+
+=>nrel_main_idtf:
+    [Гордыня]
+    (*<-lang_ru;;*);
+    [Pride]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_pride;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Pride.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Гордыня)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_pride;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Горды́ня — непомерная гордость, заносчивость, высокомерие, эгоизм[1], нетерпение упреков и жажда похвалы. Может скрываться под личинами филантропии и протекционизма, преследующих на деле цель политического самопревозносения и саморекламы.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Гордыня)](*<- lang_ru;;*);;
+	
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_pride;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[В христинстве является одним из смертных грехов.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Гордыня)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_christianity;
+                  concept_deadly_sin
+    };;
+*);;
+

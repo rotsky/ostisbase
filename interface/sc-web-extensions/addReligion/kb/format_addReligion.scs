@@ -1,0 +1,28 @@
+format_addReligion
+<- sc_node_not_relation;
+<- format;
+=> nrel_main_idtf:
+	[формат компонентa]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[format of UI component]
+	(*
+	<- lang_en;;
+	*);
+=> nrel_mimetype:
+	[application/html];;
+
+addReligion_code <- ui_external_languages;
+=> nrel_main_idtf:
+	[Компонент добавления религии]
+	(*
+	<- lang_ru;;
+	 *);
+=> nrel_main_idtf:
+	[UI component for adding religion]
+	(*
+	<- lang_en;;
+	*);;
+	

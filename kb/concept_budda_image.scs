@@ -1,0 +1,25 @@
+concept_budda_image
+
+=>nrel_main_idtf:
+    [Изображение Будды]
+    (*<-lang_ru;;*);
+    [Budda image]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_budda_image;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Budda_image.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение Будды](*<-lang_ru;;*);;
+*);;
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_budda_image;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Изображение Будды - религиозный символ буддизма.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Изображение Будды)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_buddhism
+	};;
+*);;

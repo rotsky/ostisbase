@@ -1,0 +1,39 @@
+sc_node_not_relation-> concept_budda_tooth_temple;;
+
+concept_budda_tooth_temple
+
+=>nrel_main_idtf:
+    [Храм Зуба Будды]
+    (*<-lang_ru;;*);
+    [Budda Tooth Temple]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_budda_tooth_temple;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Budda_tooth_temple.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Храм зуба Будды)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_budda_tooth_temple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Храм Зуба Будды — буддистский храм в городе Канди на Шри-Ланке, одна из главных святынь острова. Находится под защитой ЮНЕСКО в составе памятника всемирного наследия «Древний город Канди».](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Храм Зуба Будды)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_buddhism
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_budda_tooth_temple;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[По преданию, после кремирования Будды из костра достали четыре зуба, которые развезли по всему миру. Один из зубов был якобы доставлен на Цейлон в 371 году. После нескольких столетий нахождения в Индии, святыня была отправлена на Цейлон четвёртым правителем Калинги, терпевшим поражения в войнах и опасавшимся за судьбу своего государства. Реликвию на остров переправила дочь правителя, спрятав её в своей причёске. ](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Храм Зуба Будды)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_budda
+	};;
+*);;

@@ -1,0 +1,22 @@
+nrel_highest_degree_of_the_sacred
+<-sc_node_norole_relation;
+
+
+=>nrel_main_idtf:
+    [высшая степень святого* ]
+    (*<-lang_ru;;*);
+    [highest degree of the sacred* ]
+    (*<-lang_en;;*);
+    
+
+<-arity: binary_relation;
+=>nrel_first_domain: concept_religion;
+=>nrel_second_domain: concept_degree;;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : nrel_highest_degree_of_the_sacred;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Высшая степень святого - титул, выдаваемый верующим, достигнувшим духонвного совершенства.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Высшая степень святого(*))](*<- lang_ru;;*);;
+*);;

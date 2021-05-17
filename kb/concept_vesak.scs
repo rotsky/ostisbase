@@ -1,0 +1,38 @@
+concept_wesak
+
+=>nrel_main_idtf:
+    [Весак]
+    (*<-lang_ru;;*);
+    [Wesak]
+    (*<-lang_en;;*);;
+
+illustration ->..
+(*
+		->rrel_key_sc_element: concept_wesak;;
+		<=nrel_sc_text_translation: ...(*->rrel_example: "file://images/Wesak.jpg"(*=>nrel_format: format_jpg;;*);;*);;
+		=>nrel_main_idtf: [Изображение (Весак)](*<-lang_ru;;*);;
+*);;
+
+
+definition ->...
+(*
+	-> rrel_key_sc_element : concept_wesak;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[Рождество - один из главных христианских праздников, установленный в честь рождения во плоти Иисуса Христа от Девы Марии.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Определение (Весак)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+        concept_christianity;
+        concept_jesus
+	};;
+*);;
+
+statement ->...
+(*
+	-> rrel_key_sc_element : concept_wesak;;
+	<= nrel_sc_text_translation: ...(*->rrel_example:[ Иерусалимская, Русская, Грузинская, Сербская, Польская и Украинская православные церкви, а также Грекокатолическая церковь (в пределах Украины), старообрядцы и старостильные церкви празднуют 25 декабря (7 января)[1]. Константинопольская, Элладская, Болгарская и ряд иных поместных православных церквей празднуют 25 декабря по новоюлианскому календарю. Католическая и протестантские церкви — 25 декабря по григорианскому календарю. Армянская апостольская церковь — 6 января.](*<-lang_ru;;=> nrel_format: format_html;;*);;*);;
+	=> nrel_main_idtf: [Утверждение (Весак)](*<- lang_ru;;*);;
+	=> nrel_using_constants:
+	{
+                  concept_church
+    };;
+*);;
